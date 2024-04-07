@@ -1,0 +1,46 @@
+body {
+    font-family: 'arial', sans-serif;
+    background-image: url(./fimage4.jpg);
+    background-size: cover;
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    back
+
+}
+
+.container {
+    background-color:rgb(245, 245, 245) ;
+    padding:20px ;
+    border-radius:10px ;
+    box-shadow:0 0 10px rgb(28, 25, 25) ;
+    width:80% ;
+    max-width:400px ;
+    margin:auto ;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 5px;
+
+}
+button{
+    background-color: cadetblue;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(60, 209, 214);
+}

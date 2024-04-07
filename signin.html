@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesignin.css">
+        <title> Sign in</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Personal Informationn</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone number"> Phone number</label>
+                    <input type="tel" id="phone number" name="phone number" required><br><br>
+                    <label for="Age">Age:</label>
+                    <input type="number" id="Age" name="Age" required><br><br>
+                    <label> Payment method</label>
+                   <input type="radio" name="r" value="UPI">UPI
+                   <input type="radio" name="r" value="Net banking">Net banking
+                   <input type="radio" name="r" value="card">card
+                  </fieldset>
+                
+                  <button type="submit" onclick="window.location.href='login.html'">Submit</button>
+                  
+            </form> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Planner Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Application Form Styles */
+#application-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#application-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 
+
+</style>
+<body>
+  <section id="application-form">
+    <h2>Education Planner Application Form</h2>
+    <form id="application-form" method="POST" action="submit.php"> <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" > </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="US">United States</option>
+          <option value="IN">India</option>
+          <option value="UK">United Kingdom</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="education-level">Current Education Level:</label>
+        <select id="education-level" name="education_level" required>
+          <option value="">-- Select Level --</option>
+          <option value="high_school">High School</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="Course">Choose your preffered course</label>
+        Select Course: <select id="course-type" name="course-type" onchange="checkPrice()" required>.
+          <option value="">-- Select --</option>
+          <option value="SAT/AP">SAT/AP</option>
+          <option value="GRE">GRE</option>
+          <option value="GMAT">GMAT</option>
+          <option value="ACT">ACT</option>
+          <option value="TOEFL">TOEFL</option>
+          <option value="GMAT">GMAT</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="study-goals">Describe Your Study Goals:</label>
+        <textarea id="study-goals" name="study_goals" rows="5" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the Education Planner Terms and Conditions.</label>
+      </div>
+      <button type="submit">Submit Application</button>
+    </form>
+    <p id="Output2"> </p>
+  </section>
+
+  <script>const applicationForm = document.getElementById('application-form');
+
+applicationForm.addEventListener('submit', function(event) {
+  // Simulate form submission (replace this with actual form handling)
+  event.preventDefault(); // Prevent default form submission behavior
+
+  alert('Your application has been submitted successfully!'); // Display popup message
+
+  // You can optionally clear the form or redirect to a confirmation page here
+});
+
+function checkPrice() {
+let coursetype = document.getElementById("course-type").value;
+switch(coursetype) {
+ case "SAT/AP":
+document.getElementById("Output2").innerText = "SAT/AP: Rs 41000";
+ break;
+ case "GRE":
+document.getElementById("Output2").innerText = "GRE: Rs 60000";
+ break;
+ case "GMAT":
+document.getElementById("Output2").innerText = "GMAT: Rs 66000";
+ break;
+ case "ACT":
+document.getElementById("Output2").innerText = "ACT: Rs 31000";
+ break;
+default:
+ document.getElementById("Output2").innerText = "Please select course";
+} }
+</script>
+</script>
+</body>
+</html>
